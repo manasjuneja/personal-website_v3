@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Manas' Website"/>
+    <meta name="author" content="Manas Juneja"/>
+
+    <title>Manas Juneja</title>
+
+    <!-- CSS -->
+    <link href="main.css" rel="stylesheet" media="all">
+
+    <!-- FontAwesome -->
+    <link href="../maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+
+    <!-- Favicon -->
+    <link href="icons/n-color.png" rel="icon">
+</head>
+
+<body>
+  <div class="scroll-container">
+    <section class="root fade-in">
+      <img src="icons\m.webp" class="main-icon"></img>
+      <div class="content">
+        <span class="summary-text">Hi, I'm Manas.</span>
+        <span class="summary-text">I am a student, studying Artificial Intelligence & Machine Learning at  <u><a target="_blank" href="http://www.ipu.ac.in/">Guru Gobind Singh Indraprastha University</a></u>, New Delhi, India</span>
+        <span class="summary-text">
+          I’m a skilled and innovative developer with expertise in software development, image processing, and machine learning. I’ve built impactful projects which blend  technical precision with practical problem-solving. <br>
+          With a strong foundation in Python, AI tools, and web technologies, I focus on creating efficient and scalable solutions. I’m passionate about using technology to drive meaningful impact and deliver real-world value.
+        </span>
+      </div>
+
+      <div class="mouse-container">
+        <a href="#section-two">
+            <div class="mouse-field">
+            <div class="arrow"></div>
+          </div>
+        </a>
+      </div>
+
+    </section>
+
+    <section class="root section-two fade-in" id="section-two">
+      <div class="navigation-container">
+        <ul class="navigation">
+          <li class="navigation-item education active">Education</li>
+          <li class="navigation-item experience">Experience</li>
+          <li class="navigation-item publications">Projects </li>
+        </ul>
+      </div>
+      <div class="main-content-container">
+        <div class="main-content education active">
+          <div class="education-box-right">
+            <div class="education-wrapper">
+              <span class="uni-name">B.Tech. in Artificial Intelligence & Machine Learning</span>
+              <span>GGSIP University</span>
+              <span class="duration">2022 - 2026</span>
+            </div>
+          </div>
+      </div>
+      <div class="main-content experience">
+        <div class="experience-box-left">
+          <span class="experience-header">Work Experience</span>
+
+          <div class="experience-wrapper">
+            <div class="experience-wrapper-section-left">
+              <div class="dot">•</div>
+              <div class="experience-wrapper-section-left-content">
+                <span class="position">Intern</span>
+                <span class="company">iMax Global Ventures Ltd</span>
+              </div>
+            </div>
+            <div class="experience-wrapper-section-right">
+              <span class="dates">Jul 2024 - Aug 2024</span>
+              <span class="duration">1 mos</span>
+            </div>
+          </div>
+
+          <div class="experience-wrapper">
+            <div class="experience-wrapper-section-left">
+              <div class="dot">•</div>
+              <div class="experience-wrapper-section-left-content">
+                <span class="position">Data analyst </span>
+                <span class="company">GGSIP University</span>
+              </div>
+            </div>
+            <div class="experience-wrapper-section-right">
+              <span class="dates">Jan 2024 - Feb 2024</span>
+              <span class="duration">1 mos</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="main-content publications">
+        <div class="publication-wrapper">
+            <span class="title">Weigh-Bridge Fraud Detection</span>
+            <span class="authors">This project focused on using image processing to detect fraudulent activities on a weighbridge in warehouses. The software ensured that trucks were positioned correctly on the weighbridge, while also verifying that no other objects or people were present, thus preventing manipulation of weight readings.</span>
+            <span class="conference">Python, OpenCV, TensorFlow / Keras, NumPy, Pillow, Pixellib, Tkinter</span>
+        </div>
+        <div class="publication-wrapper">
+          <span class="title">Dynamic Traffic Light Optimizer</span>
+          <span class="authors">This project aimed to improve traffic flow at intersections by calculating dynamic green light timing based on real-time vehicle counts. Using computer vision to detect vehicles in images, the system adjusted signal timings to prioritize traffic with higher congestion, ensuring smoother traffic movement and reducing wait times.</span>
+          <span class="conference">Python, OpenCV, TensorFlow / Keras, NumPy</span>
+        </div>
+        <div class="publication-wrapper">
+          <span class="title">Audio to Text & Summarization</span>
+          <span class="authors">The Audio to Text & Summarization project converts spoken language into text and generates concise summaries, enabling quick insights from audio content. It was designed to offer an efficient way to process and summarize large volumes of audio data.</span>
+          <span class="conference">Python, FastAPI, Hugging Face, Google Cloud Speech-to-Text API, JWT Authentication, MongoDB, Firebase</span>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <span class="">
+          <a data-text="Click to copy"
+             target="_blank"
+             onclick="navigator.clipboard.writeText('personal@manasjuneja.com');"
+             class="email_link">
+            <img class="contact-icon" src="icons/email-icon.png"></img>
+          </a>
+
+          <a target="_blank" target="_blank" href="https://www.linkedin.com/in/junejamanas/">
+              <img class="contact-icon" src="icons/linkedin-icon.png"></img>
+          </a>
+          <a target="_blank" target="_blank" href="https://github.com/manasjuneja">
+            <img class="contact-icon" src="icons/github-icon.png"></img>
+        </a>
+          <!--<a target="_blank" target="_blank" href="assets/Namit%20Juneja's%20Resume.pdf">
+              <img class="contact-icon" src="icons/cv-icon.png"></img>
+          </a>-->
+      </span>
+      <span class="accent-text">New Delhi, India</span>
+      <!-- <span class="accent-text year" id="year"></span> -->
+    </footer>
+  </div>
+
+
+
+
+  <!-- JS -->
+  <script>
+    document.getElementById("year").innerHTML = '© ' + new Date().getFullYear();
+  </script>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
